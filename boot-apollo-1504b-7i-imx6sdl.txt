@@ -1,5 +1,5 @@
 fatload mmc ${mmcdev}:1 12000000 zImage
 fatload mmc ${mmcdev}:1 18000000 apollo-1504b-7i-imx6sdl.dtb
-setenv bootargs vt.global_cursor_default=0 vt.cur_default=1 console=ttymxc3,115200n8 root=/dev/mmcblk0p2 rootwait ro video=mxcfb0:dev=lcd,DISEN-DS070BOE50N-075,if=RGB24,fbpix=BGR32 video=mxcfb1:dev=hdmi,1280x720-32@60,if=RGB24 video=mxcfb2:off splash consoleblank=0 gigabit=1 hdmi_audio_enabled_default=0
+setenv bootargs vt.global_cursor_default=0 vt.cur_default=1 console=ttymxc3,115200n8 root=/dev/mmcblk0p2 rootwait ro video=mxcfb0:dev=lcd,DISEN-DS070BOE50N-075H,if=RGB24,fbpix=BGR32 video=mxcfb1:dev=hdmi,1280x720-32@60,if=RGB24 video=mxcfb2:off splash consoleblank=0 gigabit=1 hdmi_audio_enabled_default=0
 bootz 12000000 - 18000000
 
